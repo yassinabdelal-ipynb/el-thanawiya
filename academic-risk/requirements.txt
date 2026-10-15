@@ -1,5 +1,5 @@
 # Recorded scientific dependencies; install a suitable CPU/CUDA PyTorch build first.
-torch>=2.6
+torch>=2.14.1
 numpy==1.26.4
 pandas==2.3.3
 scikit-learn==1.7.2
