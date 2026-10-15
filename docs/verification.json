@@ -1,0 +1,22 @@
+{
+  "supplied_apk": {
+    "sha256": "ed84bf7ba8c7f9d7fee57c0ad550a605e5e3d1e636e75629049ee750fdd06adc",
+    "size_bytes": 51038238,
+    "bundled_model_matches": true
+  },
+  "relocated_build": {
+    "sha256": "661b605af62ca52d3e81f8849aaf9a8982f757c747c579e4936c3ac837397c1b",
+    "size_bytes": 51038238,
+    "bundled_model_matches": true
+  },
+  "pytorch_checkpoint": {
+    "sha256": "8f885d59c5c83006ee5acdc788bc1e007822666fc6cd13926052f67a5478aa19",
+    "unchanged": true
+  },
+  "verification": {
+    "flutter_tests_passed": 21,
+    "python_tests_passed": 17,
+    "frozen_evaluation_reproduced": true,
+    "relocated_android_build_passed": true
+  }
+}

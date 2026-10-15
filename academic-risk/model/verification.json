@@ -1,0 +1,9 @@
+{
+  "checks_passed": 17,
+  "http_api_and_cors_verified": true,
+  "saved_model_predictions_reproduced": true,
+  "data_preparation_reproduces_same_features": true,
+  "exported_model_count": 1,
+  "model_sha256": "8f885d59c5c83006ee5acdc788bc1e007822666fc6cd13926052f67a5478aa19",
+  "data_sha256": "3e448bb56163e39bbef31ab50d0aba134dc8ae3f362c9182432374a68d2d5049"
+}

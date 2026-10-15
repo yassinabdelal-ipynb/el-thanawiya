@@ -1,0 +1,29 @@
+name: Bug report
+description: Report an app, inference, or build problem using invented data.
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include expected behavior and what actually happened. Do not include private student information.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide minimal steps or a JSON example with invented grades.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and relevant output
+      description: Android/device version, or Flutter/Python version and redacted error output.

@@ -1,0 +1,17 @@
+group,source,subject,course_record,checkpoint,target,split,probability,predicted_fail
+school:387e7ce0bcfd271839ea4dfd,school,Mathematics,student-mat.csv:4,first,0,validation,0.8274760246276855,True
+school:387e7ce0bcfd271839ea4dfd,school,Mathematics,student-mat.csv:4,second,0,validation,0.2817455530166626,False
+school:e98843ff7774681968717936,school,Mathematics,student-mat.csv:9,first,0,validation,0.0020622566808015,False
+school:e98843ff7774681968717936,school,Mathematics,student-mat.csv:9,second,0,validation,0.0002306337992195,False
+school:771f2de97933bf83646da572,school,Mathematics,student-mat.csv:63,first,1,validation,0.2089468985795974,False
+school:771f2de97933bf83646da572,school,Mathematics,student-mat.csv:63,second,1,validation,0.538666844367981,True
+school:8e42b0da714d2ac5151344c7,school,Mathematics,student-mat.csv:99,first,1,validation,0.7597817182540894,True
+school:8e42b0da714d2ac5151344c7,school,Mathematics,student-mat.csv:99,second,1,validation,0.5858113169670105,True
+oulad:11391,oulad,AAA,AAA:2013J:11391,0.25,0,validation,0.1347648948431015,False
+oulad:11391,oulad,AAA,AAA:2013J:11391,0.50,0,validation,0.1012185961008071,False
+oulad:11391,oulad,AAA,AAA:2013J:11391,0.75,0,validation,0.0696983933448791,False
+oulad:52130,oulad,AAA,AAA:2013J:52130,0.25,0,validation,0.2951432466506958,False
+oulad:146188,oulad,AAA,AAA:2013J:146188,0.25,1,validation,0.4850814044475555,True
+oulad:146188,oulad,AAA,AAA:2013J:146188,0.50,1,validation,0.4162707924842834,True
+oulad:146188,oulad,AAA,AAA:2013J:146188,0.75,1,validation,0.5070709586143494,True
+oulad:564450,oulad,AAA,AAA:2013J:564450,0.25,1,validation,0.388511598110199,True

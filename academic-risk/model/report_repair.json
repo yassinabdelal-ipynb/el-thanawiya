@@ -1,0 +1,7 @@
+{
+  "checkpoint_display_labels_normalized": true,
+  "model_weights_changed": false,
+  "threshold_changed": false,
+  "test_predictions_unchanged": true,
+  "gradient_baseline_early_stopping": false
+}

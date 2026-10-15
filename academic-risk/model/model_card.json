@@ -1,0 +1,72 @@
+{
+  "format_version": 1,
+  "created_at_utc": "2026-10-08T00:52:45.808328+00:00",
+  "seed": 20261007,
+  "threshold": 0.31999999999999995,
+  "calibration_recall_constraint_met": true,
+  "features": [
+    "current_grade",
+    "latest_grade",
+    "grade_trend",
+    "grade_std",
+    "progress",
+    "assessment_count",
+    "graded_fraction",
+    "overdue_fraction",
+    "late_fraction",
+    "passing_grade",
+    "previous_failures",
+    "study_time",
+    "activities",
+    "university"
+  ],
+  "selected_epoch": 57,
+  "selection": {
+    "config": {
+      "hidden": [
+        32,
+        16
+      ],
+      "dropout": 0.15,
+      "lr": 0.001,
+      "weight_decay": 0.02
+    },
+    "best_epoch": 57,
+    "epochs": 77,
+    "seconds": 22.969000000040978,
+    "validation": {
+      "accuracy": 0.871503313631642,
+      "balanced_accuracy": 0.83141634761751,
+      "recall": 0.7516798130295063,
+      "precision": 0.7255779726497823,
+      "f1": 0.7376870962659525,
+      "log_loss": 0.2929492644664724
+    },
+    "validation_threshold": 0.3549999999999999,
+    "recall_constraint_met": true
+  },
+  "snapshot_data_sha256": "3e448bb56163e39bbef31ab50d0aba134dc8ae3f362c9182432374a68d2d5049",
+  "training_sources": [
+    "UCI Student Performance",
+    "OULAD graded course completers"
+  ],
+  "subject_name_is_feature": false,
+  "target": "Final course failure; OULAD withdrawal excluded",
+  "scope": "Research prototype. High-school validation uses two historical subjects; university results do not validate every high-school course.",
+  "timing_assumptions": [
+    "UCI first/second period timing proxies",
+    "OULAD score assumed available 14 days after submission; actual release dates unavailable"
+  ],
+  "environment": {
+    "python": "3.10.20",
+    "torch": "2.12.0.dev20260315+cu130",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "device": "cuda"
+  },
+  "attribution": [
+    "Cortez (2008), UCI Student Performance, DOI 10.24432/C5TG7T, CC BY 4.0",
+    "Kuzilek et al., OULAD, DOI 10.24432/C5KK69, CC BY 4.0"
+  ]
+}

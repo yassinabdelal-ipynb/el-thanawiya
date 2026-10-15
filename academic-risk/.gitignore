@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.mplconfig/
+data/raw/
+data/processed/
+runs/

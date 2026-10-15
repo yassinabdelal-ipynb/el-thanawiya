@@ -1,0 +1,88 @@
+calibration          rows=  5842 students= 1841 failures= 1638
+test                 rows= 11737 students= 3681 failures= 3003
+train                rows= 35021 students=11038 failures= 9493
+unseen_subject_test  rows=  4406 students= 1996 failures= 1027
+validation           rows=  5861 students= 1840 failures= 1509
+Interpreter: <original-training-environment> PyTorch: 2.12.0.dev20260315+cu130 device: cuda
+GPU: NVIDIA GeForce RTX 5060 Laptop GPU
+
+Training candidate linear
+  epoch   1 train BCE=0.4732 acc=0.797 | validation BCE=0.4637 macro accuracy=0.792 recall=0.250
+  epoch  10 train BCE=0.3579 acc=0.844 | validation BCE=0.3744 macro accuracy=0.810 recall=0.388
+  epoch  20 train BCE=0.3551 acc=0.854 | validation BCE=0.3660 macro accuracy=0.818 recall=0.459
+  epoch  30 train BCE=0.3545 acc=0.854 | validation BCE=0.3615 macro accuracy=0.830 recall=0.444
+  epoch  40 train BCE=0.3551 acc=0.857 | validation BCE=0.3629 macro accuracy=0.818 recall=0.457
+  epoch  50 train BCE=0.3593 acc=0.856 | validation BCE=0.3599 macro accuracy=0.827 recall=0.469
+  epoch  60 train BCE=0.3518 acc=0.856 | validation BCE=0.3587 macro accuracy=0.835 recall=0.470
+  epoch  70 train BCE=0.3529 acc=0.856 | validation BCE=0.3614 macro accuracy=0.829 recall=0.466
+  epoch  80 train BCE=0.3492 acc=0.856 | validation BCE=0.3611 macro accuracy=0.829 recall=0.507
+
+Training candidate 16
+  epoch   1 train BCE=0.4841 acc=0.795 | validation BCE=0.4495 macro accuracy=0.790 recall=0.193
+  epoch  10 train BCE=0.3159 acc=0.865 | validation BCE=0.3225 macro accuracy=0.854 recall=0.586
+  epoch  20 train BCE=0.3193 acc=0.866 | validation BCE=0.3094 macro accuracy=0.860 recall=0.571
+  epoch  30 train BCE=0.3046 acc=0.868 | validation BCE=0.3022 macro accuracy=0.856 recall=0.568
+  epoch  40 train BCE=0.3065 acc=0.867 | validation BCE=0.3009 macro accuracy=0.864 recall=0.604
+  epoch  50 train BCE=0.3009 acc=0.868 | validation BCE=0.2983 macro accuracy=0.865 recall=0.604
+  epoch  60 train BCE=0.2990 acc=0.874 | validation BCE=0.3003 macro accuracy=0.869 recall=0.583
+  epoch  70 train BCE=0.2991 acc=0.868 | validation BCE=0.2976 macro accuracy=0.864 recall=0.609
+  epoch  80 train BCE=0.2959 acc=0.869 | validation BCE=0.2946 macro accuracy=0.874 recall=0.644
+  epoch  90 train BCE=0.3044 acc=0.864 | validation BCE=0.2979 macro accuracy=0.863 recall=0.595
+  epoch 100 train BCE=0.2823 acc=0.877 | validation BCE=0.2949 macro accuracy=0.869 recall=0.609
+  epoch 110 train BCE=0.3034 acc=0.867 | validation BCE=0.2942 macro accuracy=0.861 recall=0.584
+
+Training candidate 32_16
+  epoch   1 train BCE=0.5353 acc=0.797 | validation BCE=0.4905 macro accuracy=0.783 recall=0.102
+  epoch  10 train BCE=0.3205 acc=0.861 | validation BCE=0.3185 macro accuracy=0.866 recall=0.626
+  epoch  20 train BCE=0.3224 acc=0.863 | validation BCE=0.3047 macro accuracy=0.860 recall=0.611
+  epoch  30 train BCE=0.3043 acc=0.866 | validation BCE=0.3011 macro accuracy=0.859 recall=0.587
+  epoch  40 train BCE=0.3087 acc=0.862 | validation BCE=0.2992 macro accuracy=0.862 recall=0.596
+  epoch  50 train BCE=0.3026 acc=0.866 | validation BCE=0.2964 macro accuracy=0.867 recall=0.605
+  epoch  60 train BCE=0.2995 acc=0.871 | validation BCE=0.2965 macro accuracy=0.870 recall=0.612
+  epoch  70 train BCE=0.2982 acc=0.867 | validation BCE=0.2977 macro accuracy=0.862 recall=0.600
+
+Training candidate 64_32
+  epoch   1 train BCE=0.5054 acc=0.787 | validation BCE=0.4625 macro accuracy=0.782 recall=0.097
+  epoch  10 train BCE=0.3110 acc=0.865 | validation BCE=0.3113 macro accuracy=0.855 recall=0.594
+  epoch  20 train BCE=0.3169 acc=0.863 | validation BCE=0.3044 macro accuracy=0.858 recall=0.586
+  epoch  30 train BCE=0.3012 acc=0.869 | validation BCE=0.2999 macro accuracy=0.854 recall=0.583
+  epoch  40 train BCE=0.3040 acc=0.866 | validation BCE=0.2993 macro accuracy=0.862 recall=0.583
+  epoch  50 train BCE=0.2971 acc=0.869 | validation BCE=0.2971 macro accuracy=0.864 recall=0.609
+  epoch  60 train BCE=0.2952 acc=0.873 | validation BCE=0.2990 macro accuracy=0.872 recall=0.613
+  epoch  70 train BCE=0.2919 acc=0.870 | validation BCE=0.3002 macro accuracy=0.862 recall=0.575
+
+Selected architecture BEFORE test evaluation: {'hidden': [32, 16], 'dropout': 0.15, 'lr': 0.001, 'weight_decay': 0.02}
+
+TEST | calibrated probabilities, frozen threshold
+all                       n=11737 accuracy=0.8128 precision=0.6169 recall=0.7080 F1=0.6593 loss=0.3745
+source:school             n=  410 accuracy=0.8805 precision=0.7333 recall=0.8839 F1=0.8016 loss=0.2399
+source:oulad              n=11327 accuracy=0.8104 precision=0.6122 recall=0.7011 F1=0.6537 loss=0.3794
+subject:Mathematics       n=  152 accuracy=0.8947 precision=0.8182 recall=0.9310 F1=0.8710 loss=0.2231
+subject:Portuguese        n=  258 accuracy=0.8721 precision=0.6522 recall=0.8333 F1=0.7317 loss=0.2498
+subject:AAA               n=  403 accuracy=0.7494 precision=0.2422 recall=0.8857 F1=0.3804 loss=0.3373
+subject:BBB               n= 3113 accuracy=0.7764 precision=0.5714 recall=0.7515 F1=0.6492 loss=0.4041
+subject:CCC               n= 1402 accuracy=0.7846 precision=0.5162 recall=0.8019 F1=0.6281 loss=0.3846
+subject:DDD               n= 2164 accuracy=0.8045 precision=0.6726 recall=0.7274 F1=0.6989 loss=0.4080
+subject:EEE               n= 1179 accuracy=0.8770 precision=0.6524 recall=0.5487 F1=0.5961 loss=0.3095
+subject:FFF               n= 3066 accuracy=0.8431 precision=0.7470 recall=0.6153 F1=0.6748 loss=0.3640
+checkpoint:first          n=  205 accuracy=0.8732 precision=0.7273 recall=0.8571 F1=0.7869 loss=0.2899
+checkpoint:second         n=  205 accuracy=0.8878 precision=0.7391 recall=0.9107 F1=0.8160 loss=0.1899
+checkpoint:0.25           n= 1694 accuracy=0.7981 precision=0.6269 recall=0.3995 F1=0.4880 loss=0.4613
+checkpoint:0.50           n= 2065 accuracy=0.8010 precision=0.5969 recall=0.7741 F1=0.6741 loss=0.3820
+checkpoint:0.75           n= 1724 accuracy=0.8875 precision=0.7640 recall=0.7786 F1=0.7712 loss=0.2687
+checkpoint:0.5            n= 1716 accuracy=0.8403 precision=0.6837 recall=0.6411 F1=0.6617 loss=0.3602
+
+UNSEEN_SUBJECT_TEST | calibrated probabilities, frozen threshold
+all                       n= 4406 accuracy=0.7674 precision=0.5007 recall=0.7352 F1=0.5957 loss=0.4013
+source:oulad              n= 4406 accuracy=0.7674 precision=0.5007 recall=0.7352 F1=0.5957 loss=0.4013
+subject:BBB               n=   93 accuracy=0.6559 precision=0.1852 recall=0.3333 F1=0.2381 loss=0.5149
+subject:DDD               n=    6 accuracy=0.6667 precision=1.0000 recall=0.3333 F1=0.5000 loss=0.7416
+subject:FFF               n=    9 accuracy=1.0000 precision=1.0000 recall=1.0000 F1=1.0000 loss=0.0767
+subject:GGG               n= 4298 accuracy=0.7694 precision=0.5051 recall=0.7416 F1=0.6009 loss=0.3991
+checkpoint:0.25           n=  352 accuracy=0.6250 precision=0.2340 recall=0.5789 F1=0.3333 loss=0.4792
+checkpoint:0.50           n=   31 accuracy=0.6452 precision=0.2000 recall=0.4000 F1=0.2667 loss=0.4963
+checkpoint:0.75           n= 2002 accuracy=0.8432 precision=0.6465 recall=0.7869 F1=0.7098 loss=0.3182
+checkpoint:0.5            n= 1959 accuracy=0.7208 precision=0.4464 recall=0.7131 F1=0.5491 loss=0.4668
+
+Saved-model CPU reload matches GPU predictions. ONE exported model: academic-risk\model\course_risk.pt
+Report: academic-risk\model\report.html

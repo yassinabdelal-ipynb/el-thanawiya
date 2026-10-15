@@ -1,0 +1,25 @@
+name: forma
+description: El-Thanawiya, offline course risk with one shared model.
+publish_to: none
+version: 1.1.0+2
+environment:
+  sdk: '>=3.10.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.5.3
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/course_risk.json
+    - assets/demo_student.json
+    - assets/model_sources.json
+    - assets/fonts/OFL.txt
+  fonts:
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope.ttf

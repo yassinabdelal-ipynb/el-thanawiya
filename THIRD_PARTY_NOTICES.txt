@@ -1,0 +1,30 @@
+THIRD PARTY NOTICES
+
+Student Performance
+Paulo Cortez (2008), UCI Machine Learning Repository.
+DOI: https://doi.org/10.24432/C5TG7T
+License: Creative Commons Attribution 4.0 International.
+https://creativecommons.org/licenses/by/4.0/
+The preparation code derives normalized checkpoint features and final failure
+labels from the original Mathematics and Portuguese course records. Subject
+names in the research data are preserved.
+
+Open University Learning Analytics Dataset
+Jakub Kuzilek, Martin Hlosta and Zdenek Zdrahal, UCI Machine Learning Repository.
+DOI: https://doi.org/10.24432/C5KK69
+License: Creative Commons Attribution 4.0 International.
+The preparation code derives assessment snapshots at 25, 50 and 75 percent
+course progress. Final exams, banked work and withdrawals are excluded. A
+14-day grade release assumption is used in the derived snapshots.
+
+Manrope
+The font is distributed under the SIL Open Font License.
+The full license is retained in forma/assets/fonts/OFL.txt.
+
+Software dependencies
+Flutter, Dart, PyTorch and other dependencies retain their respective licenses.
+SDK binaries, caches and virtual environments are not distributed here.
+
+Halabja annual data
+This separate source was audited and excluded from training. It is not
+distributed in this package. Its reuse terms were not verified.

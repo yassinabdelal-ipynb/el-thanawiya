@@ -1,0 +1,25 @@
+{
+  "seed": 20261007,
+  "features": [
+    "current_grade",
+    "latest_grade",
+    "grade_trend",
+    "grade_std",
+    "progress",
+    "assessment_count",
+    "graded_fraction",
+    "overdue_fraction",
+    "late_fraction",
+    "passing_grade",
+    "previous_failures",
+    "study_time",
+    "activities",
+    "university"
+  ],
+  "snapshots_sha256": "3e448bb56163e39bbef31ab50d0aba134dc8ae3f362c9182432374a68d2d5049",
+  "unseen_subject": "GGG",
+  "split_group": "student identity across courses/checkpoints",
+  "selection": "validation macro-source accuracy with macro failure recall >= 0.7; tie: lower validation BCE",
+  "test_policy": "No test or held-out-subject predictions until architecture, calibration and threshold are fixed.",
+  "old_uci_tests": "Previously inspected school data are retrospective development evidence, not a new external validation."
+}

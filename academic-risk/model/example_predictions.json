@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-10-07",
+  "model": "one shared PyTorch course-risk model",
+  "threshold": 0.3199999928474426,
+  "threshold_source": "model_default",
+  "courses": [
+    {
+      "name": "Mathematics",
+      "status": "predicted",
+      "credits": 3.0,
+      "current_grade_percent": 67.0,
+      "passing_grade_percent": 50.0,
+      "term_progress": 0.327,
+      "observed_assessments": 2,
+      "optional_fields_missing": [
+        "graded_fraction",
+        "overdue_fraction"
+      ],
+      "focus": [
+        {
+          "observation": "The latest assessment score declined",
+          "action": "Review the assessed topic and ask for clarification where needed"
+        }
+      ],
+      "id": "math",
+      "failure_probability": 0.001113197416998446,
+      "risk_score": 0.11,
+      "alert": false
+    },
+    {
+      "name": "German",
+      "status": "predicted",
+      "credits": 2.0,
+      "current_grade_percent": 30.0,
+      "passing_grade_percent": 40.0,
+      "term_progress": 0.327,
+      "observed_assessments": 2,
+      "optional_fields_missing": [
+        "graded_fraction",
+        "overdue_fraction",
+        "previous_failures",
+        "study_time",
+        "activities"
+      ],
+      "focus": [
+        {
+          "observation": "Current grade is below the passing threshold",
+          "action": "Review the lowest-scoring work and the remaining assessment weights"
+        },
+        {
+          "observation": "The latest assessment score declined",
+          "action": "Review the assessed topic and ask for clarification where needed"
+        }
+      ],
+      "id": "german",
+      "failure_probability": 0.7136858105659485,
+      "risk_score": 71.37,
+      "alert": true
+    },
+    {
+      "name": "Chemistry",
+      "status": "insufficient_data",
+      "reason": "At least one observed grade is required",
+      "credits": 2.0,
+      "id": "chemistry"
+    }
+  ],
+  "overall": {
+    "courses_total": 3,
+    "courses_predicted": 2,
+    "complete_coverage": false,
+    "expected_failed_courses_among_predicted": 0.715,
+    "credit_weighted_risk_score": 28.61,
+    "priority_order": [
+      "German",
+      "Mathematics"
+    ],
+    "interpretation": "Weighted priority score, not the probability of failing the entire term"
+  },
+  "validation_scope": "Research prototype. High-school validation uses two historical subjects; university results do not validate every high-school course."
+}

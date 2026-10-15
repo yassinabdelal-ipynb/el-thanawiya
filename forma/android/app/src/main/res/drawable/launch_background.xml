@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:drawable="@color/forma_background" />
+  <item android:width="280dp" android:height="280dp" android:gravity="center">
+    <bitmap android:gravity="fill" android:src="@drawable/brand_wordmark" />
+  </item>
+</layer-list>

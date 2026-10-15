@@ -1,0 +1,5 @@
+# Copy to key.properties and use your own upload key before a Google Play release.
+storePassword=YOUR_STORE_PASSWORD
+keyPassword=YOUR_KEY_PASSWORD
+keyAlias=upload
+storeFile=D:/path/to/your/forma-upload.jks

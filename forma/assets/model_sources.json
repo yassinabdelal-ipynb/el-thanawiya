@@ -1,0 +1,9 @@
+{
+  "exported_from": "course_risk.pt",
+  "source_sha256": "8f885d59c5c83006ee5acdc788bc1e007822666fc6cd13926052f67a5478aa19",
+  "training_sources": [
+    {"name": "Student Performance", "creators": "Paulo Cortez", "url": "https://archive.ics.uci.edu/dataset/320/student+performance", "license": "CC BY 4.0"},
+    {"name": "Open University Learning Analytics Dataset", "creators": "Jakub Kuzilek, Martin Hlosta, Zdenek Zdrahal", "url": "https://archive.ics.uci.edu/dataset/349/open+university+learning+analytics+dataset", "license": "CC BY 4.0"}
+  ],
+  "notice": "Weights have been converted to portable JSON without retraining. Source grade tables and individual training records are not packaged in the app. Forecasting reliability for arbitrary new high-school subjects remains unvalidated."
+}
